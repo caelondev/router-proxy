@@ -19,7 +19,6 @@ export default {
 
     if (host === "api.caelondev.net") {
       const apiRes = await handleApiRequest(request, pathname, env);
-      apiRes.headers.set("Access-Control-Allow-Origin", "*");
       return apiRes;
     }
 
